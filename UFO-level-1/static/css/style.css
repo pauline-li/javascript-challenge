@@ -1,0 +1,24 @@
+/*
+Javascript Challenge css
+
+   float: left;
+    padding: 9.5px 15px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 20;
+*/
+
+.navbar-brand {
+ 
+    height: fit-content;
+}
+
+.navbar-default .navbar-brand {
+    color: greenyellow;
+}
+
+
+.navbar-brand {
+    margin-left: 65px;
+}
+
