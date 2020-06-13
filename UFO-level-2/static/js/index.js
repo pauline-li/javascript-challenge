@@ -26,23 +26,26 @@ clickedButton.on("click", function() {
   var inputCity = textboxCity; 
   var inputState = textboxState; 
   var inputCountry = textboxCountry; 
-  // var inputShape = textboxShape; 
+  var inputShape = textboxShape; 
 
   
-
-
   var outputData = tdata
   
-  if (inputState.length > 0 && inputDate.length > 0 && inputCity.length > 0) 
-    outputData =  tdata.filter(x => (x.datetime === inputDate)).filter(x => (x.state === inputState)).filter(x => (x.city === inputCity))         
-  else if (inputState.length > 0 && inputDate.length > 0) 
-    outputData =  tdata.filter(x => (x.datetime === inputDate)).filter(x => (x.state === inputState)) 
-    //outputData =  tdata.filter(x => (x.datetime === inputDate && x.state === inputState)) 
-  else if (inputDate.length > 0) 
-    outputData =  tdata.filter(x => (x.datetime === inputDate)) 
-  else
-    outputData =  tdata
-
+  if (inputDate.length > 0) {
+    outputData = outputData.filter(x => x.datetime === inputDate);
+  }
+  if (inputCity.length > 0) {
+    outputData = outputData.filter(x => x.city === inputCity);
+  }
+  if (inputState.length > 0) {
+    outputData = outputData.filter(x => x.state === inputState);
+  }
+  if (inputCountry.length > 0) {
+    outputData = outputData.filter(x => x.country === inputCountry);
+  }
+  if (inputShape.length > 0) {
+    outputData = outputData.filter(x => x.shape === inputShape);
+  }
 
 
   outputData.forEach((ufoReport) => {
