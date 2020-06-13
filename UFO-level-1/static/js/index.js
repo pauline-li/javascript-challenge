@@ -23,18 +23,29 @@ var clickedButton = d3.select("#filter-btn");
 
 clickedButton.on("click", function() {
   
+  tbody.html(""); 
+  
+ //prevent from reloading
+ // https://stackoverflow.com/questions/30170944/use-both-d3-event-preventdefault-and-d3-event-which
+  // d3.event.preventDefault();
+  // d3.event.stopPropagation();
+
+  // if(d3.event.preventDefault){
+  //   console.log("True");
+  // }else{
+  //   console.log("False");
+  // }
+  
+
+
   // grab the value of the input field
   //https://stackoverflow.com/questions/31369347/how-to-get-dynamic-value-of-input-element-with-d3
-  var textboxValue = d3.select("#datetime").property("value");
-   
+  // var textboxValue = d3.select("#datetime").property("value");
+  var textboxValue = d3.select("#datetime").node().value;
   var inputDate = textboxValue; 
-
   console.log(inputDate)
-
   var outputData =  tdata.filter(x => x.datetime === inputDate )
-
   console.log(outputData);
-
 
   outputData.forEach((ufoReport) => {
     var row = tbody.append("tr");
@@ -44,10 +55,9 @@ clickedButton.on("click", function() {
     });
   });
 
+ 
+
+
 });
 
    
-
-
-
-
