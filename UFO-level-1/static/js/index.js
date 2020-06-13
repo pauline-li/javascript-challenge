@@ -17,17 +17,19 @@ var tbody = d3.select("tbody");
 //   });
 // });
 
-
+ 
 var clickedButton = d3.select("#filter-btn");
 
 
 clickedButton.on("click", function() {
   
-  tbody.html(""); 
+ tbody.html("");
+  
+
   
  //prevent from reloading
  // https://stackoverflow.com/questions/30170944/use-both-d3-event-preventdefault-and-d3-event-which
-  // d3.event.preventDefault();
+  d3.event.preventDefault();
   // d3.event.stopPropagation();
 
   // if(d3.event.preventDefault){
