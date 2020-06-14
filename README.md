@@ -1,5 +1,5 @@
 
-<strong>https://pauline-li.github.io/ufo-sightings.github.io/index.html</strong>
+<b>Website url: </b> <strong>https://pauline-li.github.io/ufo-sightings.github.io/index.html</strong>
 
 <b>JavaScript and DOM Manipulation</b>
 
