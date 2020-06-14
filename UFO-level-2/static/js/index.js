@@ -23,10 +23,12 @@ clickedButton.on("click", function() {
 
 
   var inputDate = textboxDate; 
-  var inputCity = textboxCity; 
-  var inputState = textboxState; 
-  var inputCountry = textboxCountry; 
-  var inputShape = textboxShape; 
+  var inputCity = textboxCity.toLowerCase(); 
+  var inputState = textboxState.toLowerCase(); 
+  var inputCountry = textboxCountry.toLowerCase(); 
+  var inputShape = textboxShape.toLowerCase(); 
+ 
+
 
   
   var outputData = tdata
