@@ -1,5 +1,5 @@
 
-https://pauline-li.github.io/ufo-sightings.github.io/index.html
+<strong>https://pauline-li.github.io/ufo-sightings.github.io/index.html</strong>
 
 <b>JavaScript and DOM Manipulation</b>
 
